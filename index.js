@@ -8,7 +8,7 @@ const media = require('./lib/media');
 const greetings = require('./lib/greetings');
 const banners = require('./lib/banners');
 const router = require('./lib/router');
-const prayer = require('./prayer');
+const prayer = require('./lib/prayer');
 
 // مجلد الصور/الجيفات (بانرات الترحيب/الوداع، كرت XP، جيف !اوامر...)
 // ⚠️ لازم تنسخ مجلد images/ الأصلي بتاعك جوه هذا المشروع الجديد يدوياً - ما جالنيش

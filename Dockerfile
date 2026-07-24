@@ -7,7 +7,10 @@
 FROM node:20-bookworm-slim
 
 # نثبت ffmpeg كبرنامج نظام حقيقي (مو حزمة npm) - هذا يحل مشكلة "spawn ffmpeg ENOENT"
-RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg \
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    git \
+    openssh-client \
+    chromium \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
